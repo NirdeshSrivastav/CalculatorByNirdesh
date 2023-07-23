@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <section class="sec1">
+            <input type="text" id="expr" value="" contenteditable="false">
+        </section>
+
+        <section class="sec2">
+            <ul>
+                <div class="row">
+                    <li class="btn"><button  id="clear-all" ><p class="tg-colors">AC</p></button></li>
+                    <li class="btn"><button id="del" onClick="del"><p class="tg-colors">DEL</p></button></li>
+                    <li class="btn"><button id="percentage" onClick="percent"><p class="tg-colors">%</p></button></li>
+                    <li class="btn"><button  id="div" onClick="divide"><p class="tg-colors">/</p></button></li>
+                </div>
+
+                <div class="row">
+                    <li class="btn"><button onClick="appendChar('7')"><p>7</p></button></li>
+                    <li class="btn"><button onClick="appendChar('8')"><p>8</p></button></li>
+                    <li class="btn"><button onClick="appendChar('9')"><p>9</p></button></li>
+                    <li class="btn"><button id="multiply" onClick="multiply"><p class="tg-colors">*</p></button></li>
+                </div>
+                <div class="row">
+                    <li class="btn"><button onClick="appendChar('4')"><p>4</p></button></li>
+                    <li class="btn"><button onClick="appendChar('5')"><p>5</p></button></li>
+                    <li class="btn"><button onClick="appendChar('6')"><p>6</p></button></li>
+                    <li class="btn"><button id="subtraction" onClick="subtract"><p class="tg-colors">-</p></button></li>
+                </div>
+
+                <div class="row">
+                    <li class="btn"><button onClick="appendChar('1')"><p>1</p></button></li>
+                    <li class="btn"><button onClick="appendChar('2')"><p>2</p></button></li>
+                    <li class="btn"><button onClick="appendChar('3')"><p>3</p></button></li>
+                    <li class="btn"><button id="adition" onClick="addition"><p class="tg-colors">+</p></button></li>
+                </div>
+
+                <div class="row">
+                    <li class="btn"><button onClick="appendChar('0')"><p>0</p></button></li>
+                    <li class="btn"><button onClick="appendChar('00')"><p>00</p></button></li>
+                    <li class="btn"><button onClick="appendChar('.')"><p>.</p></button></li>
+                    <li class="btn"><button id="result" onClick="appendChar"><p class="tg-colors">=</p></button></li>
+                </div>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
