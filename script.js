@@ -105,23 +105,23 @@ res.addEventListener('click',function(){
         switch(op)
         {
             case '+':
-                ans = value1+value2;
+                ans = value2+value1;
                 break;
 
             case '-':
-                ans = value1-value2;
+                ans = value2-value1;
                 break;
 
             case '*':
-                ans = value1*value2;
+                ans = value2*value1;
                 break;
 
             case '/':
-                ans = value1/value2;
+                ans = value2/value1;
                 break;
                 
             case '%':
-                ans = (value1*value2)/100;
+                ans = (value2*value1)/100;
                 break;
         }
         text.value = ans.toString();
